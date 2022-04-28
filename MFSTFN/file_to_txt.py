@@ -4,7 +4,7 @@ import random
 random.seed(0)
 
 segfilepath = r'D:\L8\trian\label_mask'   # label路径
-saveBasePath = r"E:\landsat数据的_rse超分辨率网络\txt_file" # 保存路径
+saveBasePath = r"E:\landsat数据\txt_file" # 保存路径
 
 
 all_file_list = os.listdir(segfilepath) #遍历文件夹下面的所有文件
