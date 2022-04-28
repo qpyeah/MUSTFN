@@ -58,7 +58,7 @@ def write_img(filename, im_proj, im_geotrans, im_data, im_height):
 
 
 im_height = im_width = 256
-model_path = r'E:\log_cloud\l8广东小块_分别一次卷积_147-Total_Loss0.0910_val_loss0.0731.pth'
+model_path = r'E:\log_cloud\l8_147-Total_Loss0.0910_val_loss0.0731.pth'
 
 
 
