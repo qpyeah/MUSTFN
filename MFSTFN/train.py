@@ -245,7 +245,7 @@ for i in range(epoch):  # 第i个epoch
     print('Total Loss: %.4f || Val Loss: %.4f ' % (total_loss / (batch_num_train + 1), val_toal_loss / (batch_num_val + 1)))
     print('Saving state, iter:', str(i + 1))
 
-    torch.save(model.state_dict(), 'E:/log_cloud/l8广东小块_SSMI_换一下膨胀率_%d-Total_Loss%.4f_val_loss%.4f.pth' % (
+    torch.save(model.state_dict(), 'E:/log_cloud/l8_%d-Total_Loss%.4f_val_loss%.4f.pth' % (
     (i + 1), total_loss / (batch_num_train + 1),val_toal_loss/((batch_num_val + 1))))
 
     lr_scheduler.step() #梯度更新  在一个epoch里面
