@@ -4,7 +4,7 @@ from torchsummary import summary
 from torchsummary import summary
 import math
 import torch.nn.functional as F
-# 适用于 128 × 128 的图像
+
 
 class DSconv(nn.Module): # 深度可分离卷积
     def __init__(self, ch_in, ch_out, stride):
