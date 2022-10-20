@@ -6,7 +6,7 @@ import math
 import torch.nn.functional as F
 
 
-class DSconv(nn.Module): # 深度可分离卷积
+class DSconv(nn.Module): # 分组卷积
     def __init__(self, ch_in, ch_out, stride):
         super(DSconv, self).__init__()
         self.pad = nn.ReplicationPad2d(padding=(1, 1, 1, 1))
@@ -243,7 +243,7 @@ class MyNet(nn.Module):
         self.sigmoid = nn.Sigmoid()
 
 
-    # x: 长时间合成landsat 和 hh hv (8个波段)  x2: modis 7   qa :1
+    
 
     def forward(self, x, x2):
 
