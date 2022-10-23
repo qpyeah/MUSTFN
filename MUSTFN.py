@@ -85,7 +85,7 @@ class Attention(nn.Module):
         x = self.relu(x)
         x = self.conv1_2(x)
         x = self.conv2(x)
-        x = self.activation(x) # 这里sigmoid 和 softmax 无所谓，只要0-1 即可 当然softmax更容易解释
+        x = self.activation(x) # 
 
         return x # torch.mul(result,x) 就是注意力机制的结果
 
@@ -126,7 +126,7 @@ class Feature_net(nn.Module):  # 特征提取网络
         self._initialize_weights()
 
     def forward(self, x, x2):
-        x = self.deep_conv1(x)  # 先做了2次初步的卷积   把 RL 和 palsar 共8 个波段做卷积
+        x = self.deep_conv1(x)  # 先做了2次初步的卷积  
 
         x = self.deep_conv1_2(x)
         x2 = self.deep_conv1_3(x2)
