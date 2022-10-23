@@ -216,7 +216,7 @@ for i in range(epoch):  # 第i个epoch
             batch = j  # 第几个batch
             if (batch + 1) * batch_size < len(val_lines):  # 别超过索引才能传进来训练
                 # 传入的参数分别是： 所有名字的列表，第几个批次，批次数量，波段数，图像尺寸，图像类别个数
-                train_RL_labe_mask_batch, train_modis, train_qa, labels = NetDataloader(train_lines, batch, batch_size, band_num,
+                train_RL_labe_mask_batch, train_modis, train_qa, labels = NetDataloader(val_lines, batch, batch_size, band_num,
                                                                             image_size=inputs_size[0:2],
                                                                             num_classes=NUM_CLASSES).dataloader()  # 读取数据
 
